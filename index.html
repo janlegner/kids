@@ -93,10 +93,11 @@
 
             const clearCards = () => document.body.innerHTML = ''
 
-            window.onload = window.onclick = () => {
+            window.onload = placeRandomCard
+            document.addEventListener('click', () => {
                 clearCards()
                 placeRandomCard()
-            }
+            })
         </script>
     </head>
     <body></body>
